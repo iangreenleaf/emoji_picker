@@ -25,6 +25,11 @@
         return '<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><meta name="apple-mobile-web-app-capable" content="yes"/>';
     };
 
+    // includes/emojon.jade compiled template
+    templatizer["includes"]["emojon"] = function tmpl_includes_emojon() {
+        return '<li class="list-group-item container"><span data-hook="code"></span><span data-hook="desc"></span></li>';
+    };
+
     // includes/formInput.jade compiled template
     templatizer["includes"]["formInput"] = function tmpl_includes_formInput() {
         return '<div class="form-group"><label data-hook="label"></label><div data-hook="message-container"><div data-hook="message-text" class="alert alert-danger"></div></div><input class="form-control"/></div>';
@@ -63,6 +68,11 @@
     // pages/personView.jade compiled template
     templatizer["pages"]["personView"] = function tmpl_pages_personView() {
         return '<section class="page view-person"><h2 data-hook="name"></h2><img data-hook="avatar" width="80" height="80"/><div class="buttons"><a data-hook="edit" class="btn">Edit</a><button data-hook="delete" class="btn">Delete</button></div></section>';
+    };
+
+    // pages/picker.jade compiled template
+    templatizer["pages"]["picker"] = function tmpl_pages_picker() {
+        return '<section class="page pageOne"><h1>Emoji Picker</h1><ul data-hook="emoji-grid" class="list-group"></ul></section>';
     };
 
     return templatizer;

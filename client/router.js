@@ -3,6 +3,7 @@ var Router = require('ampersand-router');
 var HomePage = require('./pages/home');
 var CollectionDemo = require('./pages/collection-demo');
 var InfoPage = require('./pages/info');
+var EmojiPage = require('./pages/picker');
 var PersonAddPage = require('./pages/person-add');
 var PersonEditPage = require('./pages/person-edit');
 var PersonViewPage = require('./pages/person-view');
@@ -12,6 +13,7 @@ module.exports = Router.extend({
     routes: {
         '': 'home',
         'collections': 'collectionDemo',
+        'emoji': 'emoji',
         'info': 'info',
         'person/add': 'personAdd',
         'person/:id': 'personView',
@@ -30,6 +32,13 @@ module.exports = Router.extend({
         app.trigger('page', new CollectionDemo({
             model: app.me,
             collection: app.people
+        }));
+    },
+
+    emoji: function () {
+        app.trigger('page', new EmojiPage({
+            model: app.me,
+            collection: app.emoji
         }));
     },
 

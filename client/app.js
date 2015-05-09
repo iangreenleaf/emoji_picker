@@ -6,6 +6,8 @@ var MainView = require('./views/main');
 var Me = require('./models/me');
 var People = require('./models/persons');
 var domReady = require('domready');
+var Emoji = require('./models/characters');
+var emojiData = require('../data/characters.json');
 
 // attach our app to `window` so we can
 // easily access it from the console.
@@ -15,6 +17,7 @@ window.app = app;
 app.extend({
     me: new Me(),
     people: new People(),
+    emoji: new Emoji(emojiData["Emoticons"]),
     router: new Router(),
     // This is where it all starts
     init: function() {

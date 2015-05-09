@@ -1,0 +1,9 @@
+{
+  "Emoticons": [
+    { "code": "1F608", "desc": "SMILING FACE WITH HORNS" },
+    { "code": "1F609", "desc": "WINKING FACE" },
+    { "code": "1F60A", "desc": "SMILING FACE WITH SMILING EYES" },
+    { "code": "1F60B", "desc": "FACE SAVOURING DELICIOUS FOOD" },
+    { "code": "1F60C", "desc": "RELIEVED FACE" }
+  ]
+}
