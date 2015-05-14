@@ -9,7 +9,7 @@ module.exports = View.extend({
             type: 'text',
             hook: 'desc',
         },
-        'model.code': {
+        'model.char': {
             type: 'text',
             hook: 'code',
         },
